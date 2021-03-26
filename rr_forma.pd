@@ -1,7 +1,7 @@
 #N canvas 0 116 1366 652 10;
 #N canvas 6 116 450 250 (subpatch) 0;
 #X array A 7 float 3;
-#A 0 0 2 4 7 5 2 7;
+#A 0 2.6 6.19997 8.2 1.8 3.8 4.2 6.6;
 #X coords 0 13 7 -1 50 35 1 0 0;
 #X restore 23 132 graph;
 #X floatatom 518 27 5 0 0 0 - - -;
@@ -21,7 +21,7 @@
 #X floatatom 643 96 5 0 0 0 - - -;
 #N canvas 0 50 450 250 (subpatch) 0;
 #X array A1 7 float 3;
-#A 0 4 8 0 7 5 2 7;
+#A 0 4 8 1.4 7 5 2 7;
 #X coords 0 13 7 -1 50 35 1 0 0;
 #X restore 78 132 graph;
 #X obj 395 60 array set A;
@@ -38,7 +38,7 @@
 #X restore 133 132 graph;
 #N canvas 0 50 450 250 (subpatch) 0;
 #X array C 7 float 3;
-#A 0 7 7 7 6 5 2 0;
+#A 0 7 7 7 6 5 3 0;
 #X coords 0 13 7 -1 50 35 1 0 0;
 #X restore 188 132 graph;
 #X obj 395 103 array set B;
@@ -71,11 +71,11 @@
 #X obj 442 393 f 0;
 #X obj 470 393 + 1;
 #X floatatom 516 401 5 0 0 1 repeat - -;
-#X floatatom 393 586 5 0 0 0 - - -;
+#X floatatom 393 584 5 0 0 0 - - -;
 #X floatatom 442 438 5 0 0 0 - - -;
 #X obj 442 416 %;
 #X msg 513 304 symbol \$1;
-#X floatatom 512 194 5 0 0 1 qta - -;
+#X floatatom 187 93 5 0 0 1 qta - -;
 #X obj 512 221 expr if($f1<$f2 \, $f1 \, $f2);
 #X floatatom 512 244 5 0 0 0 - - -;
 #X obj 665 194 r s;
@@ -112,7 +112,7 @@
 #X obj 556 541 + 1;
 #X obj 529 564 % 4;
 #X obj 529 609 sel 0 1 2 3;
-#X obj 222 96 bng 15 250 50 0 empty empty reset -32 8 0 10 -262144
+#X obj 221 74 bng 15 250 50 0 empty empty reset -32 8 0 10 -262144
 -1 -1;
 #X floatatom 529 586 5 0 0 0 - - -;
 #X obj 442 481 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -128,6 +128,7 @@
 #X obj 516 443 - 1;
 #X msg 442 194 0;
 #X msg 405 479 -1;
+#X obj 393 560 i;
 #X connect 1 0 16 0;
 #X connect 1 0 18 0;
 #X connect 1 0 26 0;
@@ -148,7 +149,7 @@
 #X connect 11 0 20 1;
 #X connect 12 0 13 0;
 #X connect 13 0 20 0;
-#X connect 19 0 52 0;
+#X connect 19 0 102 0;
 #X connect 21 0 12 0;
 #X connect 21 1 10 0;
 #X connect 28 0 2 1;
@@ -240,4 +241,5 @@
 #X connect 100 0 49 0;
 #X connect 100 0 85 0;
 #X connect 101 0 49 0;
+#X connect 102 0 52 0;
 #X coords 0 -1 1 1 230 155 1 15 65;
