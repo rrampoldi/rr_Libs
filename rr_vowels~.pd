@@ -1,4 +1,4 @@
-#N canvas 466 156 857 601 10;
+#N canvas 129 161 857 601 10;
 #X obj 100 176 sig~ 1;
 #X obj 100 323 /~;
 #X obj 114 201 sig~ 50;
@@ -59,9 +59,9 @@
 #X obj 228 28 clip 0 9;
 #X obj 228 51 sel 0 1 2 3 4 5 6 7 8;
 #X obj 318 137 hsl 50 15 0 1 0 0 empty empty dec 55 7 0 10 -262144
--1 -1 2600 1;
+-1 -1 4800 1;
 #X obj 318 177 hsl 50 15 0 1 0 0 empty empty vol 55 7 0 10 -228856
--1 -1 4400 1;
+-1 -1 4300 1;
 #X obj 439 9 inlet;
 #X obj 169 200 * 6000;
 #X obj 366 485 pack 0 100;
@@ -70,8 +70,11 @@
 #X obj 128 462 pow~ 4;
 #X obj 103 502 lop~;
 #X obj 318 157 hsl 50 15 0 1000 0 0 empty empty lpf 55 7 0 10 -262144
--1 -1 1200 1;
-#X msg 217 459 1 100 \, 0.8 100 100 \, 0 \$1 200;
+-1 -1 1800 1;
+#X floatatom 114 107 5 0 0 0 - - -;
+#X obj 114 129 mtof;
+#X obj 114 7 inlet;
+#X msg 217 459 1 200 \, 0.8 100 200 \, 0 \$1 300;
 #X connect 0 0 1 0;
 #X connect 1 0 7 0;
 #X connect 2 0 3 0;
@@ -97,7 +100,7 @@
 #X connect 16 0 10 0;
 #X connect 17 0 12 0;
 #X connect 17 0 15 0;
-#X connect 18 0 59 0;
+#X connect 18 0 62 0;
 #X connect 19 0 18 1;
 #X connect 20 0 12 0;
 #X connect 20 0 15 0;
@@ -152,5 +155,8 @@
 #X connect 56 0 14 1;
 #X connect 57 0 45 0;
 #X connect 58 0 57 1;
-#X connect 59 0 13 0;
+#X connect 59 0 60 0;
+#X connect 60 0 2 0;
+#X connect 61 0 59 0;
+#X connect 62 0 13 0;
 #X coords 0 -1 1 1 180 100 1 220 100;
