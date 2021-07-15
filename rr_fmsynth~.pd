@@ -6,7 +6,7 @@
 #X obj 397 479 pack 0 100;
 #X obj 397 500 line;
 #X floatatom 274 164 5 0 0 1 harm - -;
-#X floatatom 341 132 5 0 0 1 indx - -;
+#X floatatom 341 153 5 0 0 1 indx - -;
 #X obj 397 458 / 10;
 #X obj 308 304 phasor~;
 #X obj 219 390 *~;
@@ -21,18 +21,18 @@
 #X obj 498 330 expr 1-$f1;
 #X floatatom 383 305 5 0 0 1 timbre - -;
 #X obj 39 176 hsl 60 15 0 1 0 0 empty empty vol 65 8 0 10 -228856 -1
--1 3500 1;
+-1 5900 1;
 #X obj 219 246 +~;
 #X obj 251 229 *~;
 #X obj 251 207 osc~ 10;
 #X obj 251 185 *~ 1;
 #X obj 320 202 *~ 1;
 #X obj 39 100 hsl 60 15 0 10 0 0 empty empty harm 65 8 0 10 -262144
--1 -1 2600 1;
+-1 -1 5900 1;
 #X obj 39 81 hsl 60 15 0 0.99 0 0 empty empty tim 65 8 0 10 -262144
--1 -1 2600 1;
+-1 -1 2300 1;
 #X obj 39 119 hsl 60 15 0 10 0 0 empty empty idx 65 8 0 10 -262144
--1 -1 300 1;
+-1 -1 0 1;
 #X obj 220 486 *~;
 #X obj 110 40 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
@@ -45,9 +45,9 @@
 #X obj 188 78 t f b;
 #X msg 600 426 1 \$1 \, 0 \$2 \$1;
 #X obj 39 138 hsl 60 15 0 100 0 0 empty empty att 65 8 0 10 -262144
--1 -1 600 1;
+-1 -1 300 1;
 #X obj 39 157 hsl 60 15 0 20000 0 0 empty empty rel 65 8 0 10 -262144
--1 -1 2400 1;
+-1 -1 1000 1;
 #X obj 619 359 f;
 #X obj 219 566 outlet~;
 #X obj 192 25 inlet;
@@ -215,6 +215,9 @@
 #X obj 220 428 +~;
 #X obj 600 472 pow~ 4;
 #X obj 188 206 sig~;
+#X obj 274 113 i;
+#X obj 274 136 + 1;
+#X obj 341 132 i;
 #X connect 0 0 24 0;
 #X connect 0 0 37 0;
 #X connect 1 0 42 0;
@@ -245,9 +248,9 @@
 #X connect 24 0 23 0;
 #X connect 24 0 25 0;
 #X connect 25 0 22 1;
-#X connect 26 0 6 0;
+#X connect 26 0 53 0;
 #X connect 27 0 19 0;
-#X connect 28 0 7 0;
+#X connect 28 0 55 0;
 #X connect 29 0 1 0;
 #X connect 29 0 47 0;
 #X connect 31 0 38 0;
@@ -273,4 +276,7 @@
 #X connect 50 0 29 0;
 #X connect 51 0 29 1;
 #X connect 52 0 21 0;
+#X connect 53 0 54 0;
+#X connect 54 0 6 0;
+#X connect 55 0 7 0;
 #X coords 0 -1 1 1 110 240 1 25 10;
