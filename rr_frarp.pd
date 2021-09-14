@@ -1,0 +1,41 @@
+#N canvas 546 132 717 432 10;
+#X obj 79 46 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 79 139 f;
+#X obj 107 139 + 1;
+#X obj 136 139 % 2;
+#X floatatom 292 124 5 0 0 0 - - -;
+#X obj 79 162 expr if($f1<($f2/2)+1 \, $f1 \, $f1-$f2);
+#X obj 79 185 expr pow($f1 \, 2)+$f2;
+#X obj 79 269 outlet;
+#X obj 292 59 * 2;
+#X obj 97 46 nbx 3 15 1 20 0 0 empty empty iter 40 7 0 10 -262144 -1
+-1 2 256;
+#X obj 97 64 nbx 3 15 -20 20 0 0 empty empty cost 40 7 0 10 -262144
+-1 -1 1 256;
+#X obj 97 82 nbx 3 15 -999 999 0 0 empty empty out 40 7 0 10 -1 -262144
+-1 1 256;
+#X obj 79 208 t f f f;
+#X obj 118 231 * 100;
+#X obj 132 268 outlet;
+#X obj 26 16 inlet;
+#X obj 192 17 inlet;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 1 0 5 0;
+#X connect 2 0 3 0;
+#X connect 3 0 1 1;
+#X connect 4 0 3 1;
+#X connect 4 0 5 1;
+#X connect 5 0 6 0;
+#X connect 6 0 12 0;
+#X connect 8 0 4 0;
+#X connect 9 0 8 0;
+#X connect 10 0 6 1;
+#X connect 12 0 7 0;
+#X connect 12 1 11 0;
+#X connect 12 2 13 0;
+#X connect 13 0 14 0;
+#X connect 15 0 0 0;
+#X connect 16 0 10 0;
+#X coords 0 -1 1 1 100 90 1 70 15;
