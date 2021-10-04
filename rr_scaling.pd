@@ -1,0 +1,39 @@
+#N canvas 436 256 741 425 10;
+#X obj 73 197 expr $f1*(($f2*$f3)/$f4);
+#X floatatom 120 169 5 0 0 0 - - -;
+#X floatatom 167 169 5 0 0 0 - - -;
+#X floatatom 214 169 5 0 0 0 - - -;
+#X obj 120 145 mtof;
+#X obj 46 8 inlet;
+#X obj 46 31 t b f;
+#X obj 53 95 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -228856
+-1;
+#X obj 73 95 nbx 2 15 0 50 0 0 empty empty empty 0 -8 0 10 -228856
+-1 -1 0 256;
+#X obj 106 8 inlet;
+#X obj 106 31 clip 0 127;
+#X obj 106 95 nbx 3 15 0 127 0 0 empty empty tone 0 -8 0 10 -162280
+-262144 -1 0 256;
+#X obj 147 96 nbx 2 15 1 16 0 0 empty empty relation 0 -8 0 10 -1 -262144
+-1 1 256;
+#X text 177 95 /;
+#X obj 187 96 nbx 2 15 1 16 0 0 empty empty empty 0 -8 0 10 -1 -262144
+-1 1 256;
+#X obj 73 220 ftom;
+#X obj 73 272 outlet;
+#X connect 0 0 15 0;
+#X connect 1 0 0 1;
+#X connect 2 0 0 2;
+#X connect 3 0 0 3;
+#X connect 4 0 1 0;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 6 1 8 0;
+#X connect 8 0 0 0;
+#X connect 9 0 10 0;
+#X connect 10 0 11 0;
+#X connect 11 0 4 0;
+#X connect 12 0 2 0;
+#X connect 14 0 3 0;
+#X connect 15 0 16 0;
+#X coords 0 -1 1 1 180 60 1 45 60;
