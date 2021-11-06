@@ -26,14 +26,14 @@
 #X obj 220 217 expr $f2/$f1;
 #X floatatom 289 184 5 0 0 0 - - -;
 #X floatatom 445 216 5 0 0 0 - - -;
-#X obj 36 102 hsl 50 15 20 2000 0 0 empty empty dur 55 8 0 10 -262144
--1 -1 3400 1;
+#X obj 36 102 hsl 50 15 20 5000 0 0 empty empty dur 55 8 0 10 -262144
+-1 -1 0 1;
 #X obj 36 120 hsl 50 15 1 10 0 0 empty empty exp 55 8 0 10 -262144
--1 -1 600 1;
+-1 -1 0 1;
 #X obj 36 138 hsl 50 15 0.1 0.99 0 0 empty empty fb 55 8 0 10 -262144
--1 -1 4700 1;
+-1 -1 0 1;
 #X obj 36 156 hsl 50 15 100 10000 0 0 empty empty lpf 55 8 0 10 -262144
--1 -1 3100 1;
+-1 -1 0 1;
 #X obj 220 260 delread4~ \$0-plu;
 #X obj 333 259 delwrite~ \$0-plu 1000;
 #X obj 33 174 hradio 14 1 0 4 empty empty pow 60 7 0 10 -262144 -1
@@ -44,6 +44,7 @@
 #X floatatom 289 142 5 0 0 0 - - -;
 #X obj 289 120 i;
 #X obj 289 163 * 500;
+#X obj 88 4 inlet;
 #X connect 0 0 1 0;
 #X connect 1 0 11 0;
 #X connect 2 0 34 0;
@@ -85,4 +86,5 @@
 #X connect 35 0 37 0;
 #X connect 36 0 35 0;
 #X connect 37 0 23 0;
+#X connect 38 0 25 0;
 #X coords 0 -1 1 1 95 140 1 25 55;

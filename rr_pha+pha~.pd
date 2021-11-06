@@ -25,7 +25,7 @@
 #X msg 371 225 1 \$1 \, 0 \$2 \$1;
 #X obj 285 269 phasor~;
 #X obj 254 366 clip~ -1 1;
-#X obj 55 62 tgl 15 0 empty empty run 17 7 0 10 -262144 -1 -1 0 1;
+#X obj 55 62 tgl 15 0 empty empty run 17 7 0 10 -262144 -1 -1 1 1;
 #X obj 467 288 snapshot~;
 #X floatatom 467 369 5 0 0 0 - - -;
 #X floatatom 482 323 5 0 0 0 - - -;
@@ -49,16 +49,16 @@
 -1 0 1;
 #X obj 253 7 inlet;
 #X obj 58 88 hsl 60 15 10 1000 0 0 empty empty Hz(pha) 65 7 0 10 -262144
--1 -1 0 1;
-#X obj 58 106 hsl 60 15 10 1000 0 0 empty empty Hz(osc) 65 7 0 10 -228856
--1 -1 0 1;
+-1 -1 400 1;
+#X obj 58 106 hsl 60 15 10 1000 0 0 empty empty Hz(pha) 65 7 0 10 -228856
+-1 -1 200 1;
 #X obj 370 6 inlet;
 #X obj 58 124 hsl 25 15 0 4000 0 0 empty empty empty 65 7 0 10 -262144
 -1 -1 0 1;
 #X obj 93 124 hsl 25 15 0 4000 0 0 empty empty Attack 30 7 0 10 -228856
 -1 -1 0 1;
 #X obj 58 142 hsl 60 15 0 1 0 0 empty empty mix 65 7 0 10 -99865 -262144
--1 0 1;
+-1 100 1;
 #X obj 370 335 expr 1-$f1;
 #X obj 58 160 hsl 25 15 -1 0 0 0 empty empty empty 65 7 0 10 -262144
 -1 -1 0 1;
