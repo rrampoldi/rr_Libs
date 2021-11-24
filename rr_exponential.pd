@@ -1,0 +1,25 @@
+#N canvas 365 321 560 333 10;
+#X obj 68 142 expr pow(2 \, $f1/$f2);
+#X obj 68 208 * 440;
+#X obj 68 233 outlet;
+#X obj 68 74 nbx 3 14 -50 50 0 0 empty empty in 38 7 0 10 -262144 -1
+-1 0 256;
+#X obj 68 13 inlet;
+#X obj 138 74 nbx 3 14 2 24 0 0 empty empty div 38 7 0 10 -228856 -1
+-1 2 256;
+#X obj 71 92 hsl 60 15 -10 10 0 0 empty empty empty -2 -8 0 10 -228856
+-1 -1 2800 1;
+#X obj 113 192 + 440;
+#X obj 113 169 i;
+#X obj 138 92 nbx 3 14 0 999 0 0 empty empty tun 38 7 0 10 -228856
+-1 -1 440 256;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 3 0 0 0;
+#X connect 4 0 3 0;
+#X connect 5 0 0 1;
+#X connect 6 0 8 0;
+#X connect 7 0 1 1;
+#X connect 7 0 9 0;
+#X connect 8 0 7 0;
+#X coords 0 -1 1 1 140 65 1 60 50;
