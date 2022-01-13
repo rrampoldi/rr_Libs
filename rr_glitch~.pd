@@ -1,0 +1,46 @@
+#N canvas 371 235 934 484 10;
+#X obj 58 14 inlet~;
+#X obj 57 292 *~ 1;
+#X obj 162 292 *~ 0;
+#X obj 78 94 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
+;
+#X obj 183 176 sel 0 1, f 14;
+#X obj 183 228 line;
+#X msg 183 199 0 50;
+#X msg 223 199 1 50;
+#X obj 78 150 t f f, f 18;
+#X obj 78 176 sel 0 1, f 14;
+#X obj 78 228 line;
+#X msg 78 199 1 50;
+#X msg 118 199 0 50;
+#X obj 163 349 delwrite~ \$0-glitch 500;
+#X obj 101 94 hsl 50 15 50 500 0 0 empty empty empty -2 -8 0 10 -1
+-262144 -1 0 1;
+#X obj 156 94 nbx 3 15 1 500 0 0 empty empty empty 0 -8 0 10 -1 -262144
+-1 50 256;
+#X obj 162 265 delread~ \$0-glitch;
+#X obj 57 406 outlet~;
+#X obj 107 14 inlet;
+#X connect 0 0 1 0;
+#X connect 1 0 13 0;
+#X connect 1 0 17 0;
+#X connect 2 0 13 0;
+#X connect 2 0 17 0;
+#X connect 3 0 8 0;
+#X connect 4 0 6 0;
+#X connect 4 1 7 0;
+#X connect 5 0 2 1;
+#X connect 6 0 5 0;
+#X connect 7 0 5 0;
+#X connect 8 0 9 0;
+#X connect 8 1 4 0;
+#X connect 9 0 11 0;
+#X connect 9 1 12 0;
+#X connect 10 0 1 1;
+#X connect 11 0 10 0;
+#X connect 12 0 10 0;
+#X connect 14 0 15 0;
+#X connect 15 0 16 0;
+#X connect 16 0 2 0;
+#X connect 18 0 3 0;
+#X coords 0 -1 1 1 130 55 1 70 65;
