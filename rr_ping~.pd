@@ -41,11 +41,11 @@ frequency \; \$4 detune;
 #X floatatom 66 97 5 0 0 0 - - -;
 #X floatatom 66 120 5 0 0 0 - - -;
 #X obj 104 99 vsl 15 35 0 2 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 3400 1;
 #X obj 124 99 vsl 15 35 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
-#X obj 144 99 vsl 15 35 0 5 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 600 1;
+#X obj 144 99 vsl 15 35 1 8 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 3400 1;
 #X obj 164 99 vsl 15 35 0 20 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
 #X obj 59 171 mtof;

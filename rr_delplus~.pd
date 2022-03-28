@@ -1,0 +1,52 @@
+#N canvas 0 116 1366 652 10;
+#X obj 51 33 inlet~;
+#X obj 52 405 delwrite~ \$0-del 8000;
+#X obj 111 278 delread4~ \$0-del;
+#X obj 110 231 sig~;
+#X floatatom 110 209 5 0 0 0 - - -;
+#X obj 111 378 *~;
+#X floatatom 345 302 5 0 99 0 - - -;
+#X obj 150 362 / 100;
+#X obj 182 237 osc~;
+#X floatatom 182 209 5 0 20 0 - - -;
+#X obj 111 301 lop~;
+#X floatatom 240 286 5 0 0 0 - - -;
+#X obj 111 324 hip~;
+#X floatatom 288 309 5 0 0 0 - - -;
+#X obj 110 254 +~;
+#X obj 112 458 outlet~;
+#X obj 110 88 vsl 15 50 8 8000 1 0 empty empty Dur 0 -9 0 10 -262144
+-1 -1 1100 1;
+#X obj 128 88 vsl 8 50 0.2 20 1 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 1400 1;
+#X obj 143 88 vsl 15 50 100 10000 0 0 empty empty Lp 0 -9 0 10 -99865
+-262144 -1 3700 1;
+#X obj 161 88 vsl 15 50 100 10000 0 0 empty empty Hp 0 -9 0 10 -191407
+-262144 -1 300 1;
+#X obj 182 88 vsl 15 50 0 99 0 0 empty empty Fb 0 -9 0 10 -1 -262144
+-1 3800 1;
+#X msg 345 323 \$1 100;
+#X obj 345 346 line;
+#X connect 0 0 1 0;
+#X connect 2 0 10 0;
+#X connect 3 0 14 0;
+#X connect 4 0 3 0;
+#X connect 5 0 15 0;
+#X connect 5 0 1 0;
+#X connect 6 0 21 0;
+#X connect 7 0 5 1;
+#X connect 8 0 14 1;
+#X connect 9 0 8 0;
+#X connect 10 0 12 0;
+#X connect 11 0 10 1;
+#X connect 12 0 5 0;
+#X connect 13 0 12 1;
+#X connect 14 0 2 0;
+#X connect 16 0 4 0;
+#X connect 17 0 9 0;
+#X connect 18 0 11 0;
+#X connect 19 0 13 0;
+#X connect 20 0 6 0;
+#X connect 21 0 22 0;
+#X connect 22 0 7 0;
+#X coords 0 -1 1 1 106 100 1 100 50;

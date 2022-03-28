@@ -1,0 +1,57 @@
+#N canvas 429 318 817 365 10;
+#X obj 62 202 phasor~ 2;
+#X obj 62 248 +~ 80;
+#X obj 44 298 *~;
+#X obj 43 166 phasor~;
+#X obj 46 46 hsl 60 15 0.1 10 1 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 700 1;
+#X obj 111 46 nbx 5 15 -1e+37 1e+37 0 0 empty empty Hz 58 7 0 10 -262144
+-1 -1 0.172698 256;
+#X obj 46 64 hsl 60 15 0.1 5 1 0 empty empty empty -2 -8 0 10 -228856
+-1 -1 1700 1;
+#X obj 111 64 nbx 5 15 -1e+37 1e+37 0 0 empty empty lfo 58 7 0 10 -228856
+-1 -1 0.308698 256;
+#X obj 46 82 hsl 60 15 0 8000 0 0 empty empty empty -2 -8 0 10 -191407
+-1 -1 300 1;
+#X obj 111 82 nbx 5 15 -1e+37 1e+37 0 0 empty empty res 58 7 0 10 -191407
+-1 -1 406.78 256;
+#X obj 62 225 *~ 500;
+#X obj 46 100 hsl 60 15 50 200 0 0 empty empty empty -2 -8 0 10 -162280
+-1 -1 0 1;
+#X obj 111 100 nbx 5 15 -1e+37 1e+37 0 0 empty empty Q 58 7 0 10 -162280
+-1 -1 50 256;
+#X obj 44 275 vcf~ 50;
+#X obj 46 119 hsl 60 15 0.1 100 1 0 empty empty empty -2 -8 0 10 -1
+-262144 -1 0 1;
+#X obj 111 119 nbx 5 15 -1e+37 1e+37 0 0 empty empty vol 58 7 0 10
+-1 -262144 -1 0.1 256;
+#X obj 111 258 sig~;
+#X obj 111 281 lop~ 5;
+#X obj 111 234 / 10;
+#X msg 149 150 0;
+#X obj 149 28 bng 15 250 50 0 empty empty pha0 20 7 0 10 -262144 -1
+-1;
+#X obj 44 333 outlet~;
+#X connect 0 0 10 0;
+#X connect 1 0 13 1;
+#X connect 2 0 21 0;
+#X connect 3 0 13 0;
+#X connect 4 0 5 0;
+#X connect 5 0 3 0;
+#X connect 6 0 7 0;
+#X connect 7 0 0 0;
+#X connect 8 0 9 0;
+#X connect 9 0 10 1;
+#X connect 10 0 1 0;
+#X connect 11 0 12 0;
+#X connect 12 0 13 2;
+#X connect 13 0 2 0;
+#X connect 14 0 15 0;
+#X connect 15 0 18 0;
+#X connect 16 0 17 0;
+#X connect 17 0 2 1;
+#X connect 18 0 16 0;
+#X connect 19 0 3 1;
+#X connect 19 0 0 1;
+#X connect 20 0 19 0;
+#X coords 0 -1 1 1 165 140 1 35 5;
