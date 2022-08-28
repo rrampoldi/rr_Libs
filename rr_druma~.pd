@@ -9,19 +9,19 @@
 #X obj 80 311 -~ 0.25;
 #X obj 80 265 sqrt~;
 #X obj 81 132 nbx 3 14 10 50 0 0 empty empty empty 0 -8 0 10 -1 -262144
--1 10 256;
+-1 30 256;
 #X obj 81 149 nbx 3 14 0 1 0 0 empty empty empty 0 -8 0 10 -1 -262144
 -1 0 256;
 #X obj 81 166 nbx 3 14 1 10 0 0 empty empty empty 0 -8 0 10 -1 -262144
--1 10 256;
+-1 1 256;
 #X obj 134 333 * 100;
-#X obj 122 135 vsl 15 42 0 0.1 0 0 empty empty empty 0 -9 0 10 -1 -262144
+#X obj 122 135 vsl 15 42 0 1 0 0 empty empty empty 0 -9 0 10 -1 -262144
 -1 1600 1;
 #X obj 81 427 *~;
 #X msg 96 380 \$1 100;
 #X obj 96 403 line~;
 #X obj 142 112 bng 15 250 50 0 empty empty snare 17 7 0 10 -191407
--262144 -1;
+-1 -1;
 #X obj 200 196 t b b;
 #X msg 80 196 0 \, 1 200;
 #X msg 200 219 1 \, 0 100;
@@ -35,13 +35,13 @@
 #X msg 214 358 \$1 100;
 #X obj 214 381 line~;
 #X obj 143 132 nbx 3 14 10 50 0 0 empty empty empty 0 -8 0 10 -191407
--1 -1 25 256;
-#X obj 143 149 nbx 3 14 0 2 0 0 empty empty empty 0 -8 0 10 -191407
--1 -1 1 256;
-#X obj 143 166 nbx 3 14 1 20 0 0 empty empty empty 0 -8 0 10 -191407
 -1 -1 20 256;
-#X obj 184 135 vsl 15 42 0 0.2 0 0 empty empty empty 0 -9 0 10 -191407
--1 -1 1600 1;
+#X obj 143 149 nbx 3 14 0 2 0 0 empty empty empty 0 -8 0 10 -191407
+-1 -1 0 256;
+#X obj 143 166 nbx 3 14 1 20 0 0 empty empty empty 0 -8 0 10 -191407
+-1 -1 1 256;
+#X obj 184 135 vsl 15 42 0 1 0 0 empty empty empty 0 -9 0 10 -191407
+-1 -1 4100 1;
 #X obj 248 248 * 10;
 #X obj 251 312 * 100;
 #X obj 310 235 line~;
@@ -55,13 +55,13 @@
 #X obj 204 112 bng 15 250 50 0 empty empty hi-hat 17 7 0 10 -262144
 -1 -1;
 #X obj 205 132 nbx 3 14 10 50 0 0 empty empty empty 0 -8 0 10 -262144
--1 -1 50 256;
+-1 -1 10 256;
 #X obj 205 149 nbx 3 14 2 6 0 0 empty empty empty 0 -8 0 10 -262144
 -1 -1 2 256;
 #X obj 205 166 nbx 3 14 1 6 0 0 empty empty empty 0 -8 0 10 -262144
--1 -1 6 256;
-#X obj 246 135 vsl 15 42 0 0.5 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 1100 1;
+-1 -1 1 256;
+#X obj 246 135 vsl 15 42 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 4000 1;
 #X obj 480 235 line~;
 #X obj 480 427 *~;
 #X msg 496 368 \$1 100;
@@ -89,10 +89,10 @@
 #X obj 342 97 sel 0;
 #X msg 342 168 seed \$1;
 #X obj 176 89 nbx 2 16 2 32 0 0 empty empty empty 0 -8 0 10 -1 -262144
--1 15 256;
+-1 8 256;
 #X obj 400 55 i;
 #X obj 208 89 nbx 5 16 -1e+37 1e+37 0 0 empty empty seed 0 -8 0 10
--262144 -128992 -1 107 256;
+-262144 -128992 -1 25 256;
 #X obj 342 146 f;
 #X obj 200 470 outlet~;
 #X obj 558 41 t f f;

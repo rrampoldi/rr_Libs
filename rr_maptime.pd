@@ -7,9 +7,9 @@
 ;
 #X obj 87 136 tgl 15 0 empty empty 2 4 24 0 10 -262144 -1 -1 0 1;
 #X obj 54 213 spigot;
-#X obj 105 136 tgl 15 0 empty empty 1 4 24 0 10 -262144 -1 -1 0 1;
+#X obj 105 136 tgl 15 0 empty empty 1 4 24 0 10 -262144 -1 -1 1 1;
 #X obj 72 236 spigot;
-#X obj 123 136 tgl 15 0 empty empty /8 0 24 0 8 -262144 -1 -1 0 1;
+#X obj 123 136 tgl 15 0 empty empty /8 0 24 0 8 -262144 -1 -1 1 1;
 #X obj 90 258 spigot;
 #X obj 141 136 tgl 15 0 empty empty /16 0 24 0 8 -262144 -1 -1 0 1
 ;
@@ -36,6 +36,7 @@
 #X msg 288 372 0.625;
 #X floatatom 54 474 5 0 0 0 - - -;
 #X obj 54 515 outlet;
+#X obj 160 26 inlet;
 #X connect 0 0 1 1;
 #X connect 1 0 23 1;
 #X connect 2 0 3 0;
@@ -75,4 +76,5 @@
 #X connect 29 0 14 0;
 #X connect 30 0 16 0;
 #X connect 31 0 32 0;
+#X connect 33 0 17 0;
 #X coords 0 -1 1 1 140 100 1 60 70;
