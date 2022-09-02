@@ -17,7 +17,7 @@
 #X obj 174 409 outlet;
 #X obj 57 9 inlet;
 #X obj 76 62 nbx 2 15 2 24 0 0 empty empty pts 0 22 0 10 -262144 -1
--1 2 256;
+-1 7 256;
 #X obj 121 62 bng 15 250 50 0 empty empty reset 0 22 0 10 -262144 -1
 -1;
 #X obj 121 9 inlet;

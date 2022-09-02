@@ -11,9 +11,9 @@
 #X obj 39 438 + 0;
 #X floatatom 119 423 5 0 0 0 - - -;
 #X obj 96 77 vradio 16 1 0 7 empty empty empty 0 -8 0 10 -262144 -1
--1 4;
+-1 6;
 #X obj 119 77 hradio 14 1 0 6 empty empty empty 0 -8 0 10 -262144 -1
--1 3;
+-1 0;
 #X obj 119 346 sel 0 1 2 3 4 5;
 #X msg 119 369 0;
 #X msg 133 391 2;
@@ -42,7 +42,7 @@
 #X obj 283 369 % 3;
 #X obj 279 490 == 1;
 #X obj 119 93 hradio 14 1 0 4 empty empty empty 0 -8 0 10 -262144 -1
--1 3;
+-1 0;
 #X obj 206 93 nbx 1 14 0 1 0 0 empty empty empty 0 -8 0 10 -262144
 -1 -1 0 256;
 #X obj 310 346 sel 0 1 2 3;
@@ -65,7 +65,7 @@
 #X floatatom 422 484 5 0 0 0 - - -;
 #X obj 471 490 == 2;
 #X obj 119 109 hradio 14 1 0 3 empty empty empty 0 -8 0 10 -262144
--1 -1 2;
+-1 -1 0;
 #X obj 206 109 nbx 1 14 0 2 0 0 empty empty empty 0 -8 0 10 -262144
 -1 -1 0 256;
 #X obj 502 346 sel 0 1 2;
@@ -85,13 +85,13 @@
 #X floatatom 613 484 5 0 0 0 - - -;
 #X obj 662 490 == 3;
 #X obj 119 126 hradio 14 1 0 2 empty empty empty 0 -8 0 10 -262144
--1 -1 1;
+-1 -1 0;
 #X obj 693 346 sel 0 1;
 #X obj 666 369 % 5;
 #X msg 565 266 0 1 2 5 6;
 #X msg 712 391 6;
 #X obj 206 125 nbx 1 14 0 3 0 0 empty empty empty 0 -8 0 10 -262144
--1 -1 3 256;
+-1 -1 0 256;
 #X msg 721 266 0 1 5 6;
 #X obj 805 415 list store;
 #X obj 805 369 f 0;
@@ -108,9 +108,9 @@
 #X obj 854 490 == 4;
 #X obj 858 369 % 4;
 #X obj 119 143 hradio 14 1 0 2 empty empty empty 0 -8 0 10 -262144
--1 -1 1;
+-1 -1 0;
 #X obj 206 142 nbx 1 14 0 2 0 0 empty empty empty 0 -8 0 10 -262144
--1 -1 1 256;
+-1 -1 0 256;
 #X obj 996 415 list store;
 #X obj 996 369 f 0;
 #X obj 1022 369 + 1;
@@ -166,6 +166,7 @@
 #X obj 66 290 spigot;
 #X obj 209 41 tgl 15 0 empty empty spread -38 7 0 10 -262144 -1 -1
 0 1;
+#X obj 443 24 inlet;
 #X connect 0 0 1 1;
 #X connect 1 0 8 0;
 #X connect 2 0 140 0;
@@ -357,4 +358,5 @@
 #X connect 146 0 137 1;
 #X connect 147 0 142 0;
 #X connect 148 0 147 1;
+#X connect 149 0 136 1;
 #X coords 0 -1 1 1 150 190 1 85 10;

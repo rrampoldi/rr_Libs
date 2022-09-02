@@ -108,15 +108,17 @@
 #X obj 147 172 bng 15 500 50 0 empty empty empty 17 7 0 10 -1 -262144
 -1;
 #X obj 64 157 nbx 2 14 0 11 0 0 empty empty empty 0 -8 0 10 -262144
--191407 -1 4 256;
+-191407 -1 10 256;
 #X obj 64 31 inlet;
 #X obj 64 173 nbx 2 14 0 127 0 0 empty empty empty 0 -8 0 10 -262144
--1 -1 64 256;
+-1 -1 46 256;
 #X obj 217 76 t f f;
 #X obj 244 102 outlet;
 #X obj 217 53 +;
-#X obj 232 27 inlet;
+#X obj 232 31 inlet;
 #X floatatom 460 618 5 0 0 0 - - -;
+#X obj 949 36 inlet;
+#X msg 949 59 seed \$1;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 1 1 3 0;
@@ -253,4 +255,17 @@
 #X connect 101 0 100 1;
 #X connect 102 0 6 1;
 #X connect 102 0 95 0;
+#X connect 103 0 104 0;
+#X connect 104 0 8 0;
+#X connect 104 0 29 0;
+#X connect 104 0 0 0;
+#X connect 104 0 68 0;
+#X connect 104 0 50 0;
+#X connect 104 0 22 0;
+#X connect 104 0 34 0;
+#X connect 104 0 64 0;
+#X connect 104 0 15 0;
+#X connect 104 0 78 0;
+#X connect 104 0 41 0;
+#X connect 104 0 59 0;
 #X coords 0 -1 1 1 115 95 1 55 100;
