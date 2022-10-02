@@ -5,12 +5,12 @@
 #X obj 59 151 f 0;
 #X obj 86 151 + 1;
 #X obj 114 151 % 2;
-#X obj 184 26 inlet;
+#X obj 184 27 inlet;
 #X obj 203 135 list length;
 #X obj 127 213 list store;
 #X msg 59 174 get \$1 1;
 #X obj 83 81 nbx 3 15 0 127 0 0 empty empty off 40 7 0 10 -262144 -1
--1 38 256;
+-1 60 256;
 #X obj 64 261 +;
 #X obj 64 237 f 0;
 #X obj 64 307 t f f;
@@ -20,10 +20,11 @@
 #X msg 223 221 0;
 #X obj 184 49 t a a b;
 #X obj 59 100 hradio 15 1 0 4 empty empty oct 65 7 0 10 -262144 -1
--1 0;
+-1 2;
 #X obj 126 245 + 1;
 #X obj 126 268 * 12;
 #X obj 64 373 outlet;
+#X obj 117 27 inlet;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
@@ -50,4 +51,5 @@
 #X connect 18 0 19 0;
 #X connect 19 0 20 0;
 #X connect 20 0 14 1;
+#X connect 22 0 9 0;
 #X coords 0 -1 1 1 100 70 1 50 55;

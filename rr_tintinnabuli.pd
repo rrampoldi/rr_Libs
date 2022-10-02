@@ -38,7 +38,7 @@
 #X msg 330 275 0;
 #X msg 361 275 1;
 #X obj 273 52 hradio 15 1 0 2 empty empty Max|min 0 26 0 10 -262144
--1 -1 1;
+-1 -1 0;
 #X obj 361 247 sel 0;
 #X msg 388 275 0;
 #X msg 419 275 1;
@@ -52,6 +52,7 @@
 #X msg 360 401 -12;
 #X obj 45 480 outlet;
 #X obj 219 480 outlet;
+#X obj 160 13 inlet, f 6;
 #X connect 0 0 6 0;
 #X connect 1 0 3 0;
 #X connect 2 0 5 1;
@@ -124,4 +125,5 @@
 #X connect 46 2 48 0;
 #X connect 47 0 42 1;
 #X connect 48 0 42 1;
+#X connect 51 0 2 0;
 #X coords 0 -1 1 1 160 70 1 225 20;

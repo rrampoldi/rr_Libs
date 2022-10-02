@@ -1,11 +1,10 @@
 #N canvas 0 116 1366 652 10;
 #X msg 647 403 symbol whole;
 #X msg 684 448 symbol diminished;
-#N canvas 0 50 450 250 (subpatch) 0;
-#X array \$0-sca25 15 float 3;
-#A 0 0 2 4 5 7 9 11 12 14 16 17 19 21 23 24;
-#X coords 0 -1 1 1 100 70 1 0 0;
-#X restore 485 60 graph;
+#N canvas 6 116 450 250 (subpatch) 0;
+#X array \$0-sca25 15 float 2;
+#X coords 0 24 16 0 100 70 1 0 0;
+#X restore 1233 555 graph;
 #X msg 572 313 symbol harmonica;
 #X msg 610 358 symbol melodica;
 #X msg 492 223 symbol mayor;
@@ -25,7 +24,7 @@
 #X msg 640 381 0 2 4 6 8 10 12 14 16 18 20 22 24 26 28;
 #X obj 485 141 sel 0 1 2 3 4 5;
 #X obj 88 128 hradio 15 1 0 6 empty empty empty 0 -8 0 10 -262144 -1
--1 0;
+-1 1;
 #X obj 71 15 inlet;
 #X floatatom 88 87 5 0 0 1 root - -;
 #X floatatom 71 403 5 0 0 0 - - -;
@@ -69,7 +68,6 @@
 #X obj 184 16 inlet;
 #X obj 350 376 + 7;
 #X obj 395 376 + 14;
-#X obj 223 102 t b f;
 #X connect 0 0 17 0;
 #X connect 1 0 18 0;
 #X connect 3 0 14 0;
@@ -93,7 +91,7 @@
 #X connect 20 5 27 0;
 #X connect 21 0 20 0;
 #X connect 22 0 43 0;
-#X connect 23 0 64 0;
+#X connect 23 0 30 1;
 #X connect 24 0 25 0;
 #X connect 26 0 3 0;
 #X connect 26 0 11 0;
@@ -144,6 +142,4 @@
 #X connect 61 0 23 0;
 #X connect 62 0 40 0;
 #X connect 63 0 41 0;
-#X connect 64 0 43 0;
-#X connect 64 1 30 1;
 #X coords 0 -1 1 1 125 120 1 65 55;

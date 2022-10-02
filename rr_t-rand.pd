@@ -13,16 +13,17 @@
 #X obj 93 353 < 100;
 #X obj 130 233 % 8;
 #X obj 144 81 nbx 2 15 1 32 0 0 empty empty step 0 -8 0 10 -262144
--1 -1 1 256;
+-1 -1 8 256;
 #X obj 130 256 sel 0;
 #X obj 130 279 i;
 #X msg 130 302 seed \$1;
 #X obj 176 81 nbx 2 15 1 100 0 0 empty empty prob 0 -8 0 10 -262144
--1 -1 1 256;
+-1 -1 65 256;
 #X obj 93 376 sel 1;
 #X obj 93 422 outlet;
-#X obj 209 81 nbx 5 15 1 10000 0 0 empty empty seed 0 -8 0 10 -228856
--1 -1 2 256;
+#X obj 209 81 nbx 5 15 1 100000 0 0 empty empty seed 0 -8 0 10 -228856
+-1 -1 10000 256;
+#X obj 209 10 inlet;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
@@ -43,4 +44,5 @@
 #X connect 15 0 9 1;
 #X connect 16 0 17 0;
 #X connect 18 0 13 1;
+#X connect 19 0 18 0;
 #X coords 0 -1 1 1 185 60 1 85 45;

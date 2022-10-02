@@ -25,6 +25,8 @@
 #X obj 165 39 inlet;
 #X obj 109 383 outlet;
 #X obj 56 87 random 6;
+#X obj 275 39 inlet;
+#X msg 275 164 seed \$1;
 #X connect 0 0 1 0;
 #X connect 0 1 2 0;
 #X connect 0 2 3 0;
@@ -61,3 +63,7 @@
 #X connect 22 0 5 0;
 #X connect 23 0 21 1;
 #X connect 25 0 0 0;
+#X connect 26 0 27 0;
+#X connect 27 0 8 0;
+#X connect 27 0 25 0;
+#X connect 27 0 6 0;
