@@ -28,7 +28,7 @@
 #X obj 304 467 outlet;
 #X obj 67 467 outlet;
 #X obj 88 48 nbx 2 15 2 20 0 0 empty empty num 0 21 0 10 -1 -262144
--1 4 256;
+-1 2 256;
 #X obj 235 13 inlet;
 #X obj 374 13 inlet;
 #X obj 374 36 clip 2 6;
@@ -37,8 +37,9 @@
 #X obj 202 384 t b b, f 10;
 #X obj 67 84 t b b b b, f 23;
 #X msg 202 415 0;
-#X obj 259 413 del 100;
 #X msg 259 436 1;
+#X obj 300 161 r sync;
+#X obj 259 413 del 20;
 #X connect 0 0 34 0;
 #X connect 1 0 4 0;
 #X connect 2 0 3 0;
@@ -46,6 +47,8 @@
 #X connect 4 0 2 0;
 #X connect 4 1 5 0;
 #X connect 5 0 6 1;
+#X connect 5 0 12 1;
+#X connect 5 0 19 1;
 #X connect 6 0 7 0;
 #X connect 6 0 11 0;
 #X connect 7 0 6 1;
@@ -79,12 +82,13 @@
 #X connect 31 0 0 0;
 #X connect 32 0 26 0;
 #X connect 33 0 35 0;
-#X connect 33 1 36 0;
+#X connect 33 1 38 0;
 #X connect 34 0 23 0;
 #X connect 34 1 8 0;
 #X connect 34 2 8 1;
 #X connect 34 3 33 0;
 #X connect 35 0 32 1;
-#X connect 36 0 37 0;
-#X connect 37 0 32 1;
+#X connect 36 0 32 1;
+#X connect 37 0 5 0;
+#X connect 38 0 36 0;
 #X coords 0 -1 1 1 65 60 1 60 20;

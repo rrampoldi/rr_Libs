@@ -65,6 +65,7 @@
 #X obj 670 21 inlet;
 #X msg 670 48 0;
 #X obj 107 21 inlet;
+#X obj 730 32 r sync;
 #X connect 0 0 1 0;
 #X connect 1 0 22 0;
 #X connect 2 0 3 0;
@@ -130,4 +131,5 @@
 #X connect 53 0 20 1;
 #X connect 53 0 21 1;
 #X connect 54 0 15 0;
+#X connect 55 0 53 0;
 #X coords 0 -1 1 1 120 80 1 45 60;
