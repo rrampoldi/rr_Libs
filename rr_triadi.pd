@@ -1,0 +1,25 @@
+#N canvas 100 301 450 314 10;
+#X obj 43 60 expr ($f1 + if(random(0 \, 100)<33 \, 7 \, if(random(0
+\, 100)<66 \, 4 \, 3))) % $f2, f 32;
+#X obj 43 109 t f f;
+#X obj 43 268 outlet;
+#X obj 43 18 inlet;
+#X obj 83 109 expr ($f1 + if(random(0 \, 100)<33 \, 7 \, if(random(0
+\, 100)<66 \, 4 \, 3))) % $f2, f 32;
+#X obj 83 158 t f f;
+#X obj 122 158 expr ($f1 + if(random(0 \, 100)<33 \, 7 \, if(random(0
+\, 100)<66 \, 4 \, 3))) % $f2, f 32;
+#X obj 311 44 f \$1;
+#X obj 311 18 loadbang;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 1 1 4 0;
+#X connect 3 0 0 0;
+#X connect 4 0 5 0;
+#X connect 5 0 2 0;
+#X connect 5 1 6 0;
+#X connect 6 0 2 0;
+#X connect 7 0 0 1;
+#X connect 7 0 6 1;
+#X connect 7 0 4 1;
+#X connect 8 0 7 0;
