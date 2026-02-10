@@ -1,8 +1,8 @@
 #N canvas 329 239 792 477 10;
 #N canvas 6 116 450 250 (subpatch) 0;
-#X array pattern 5 float 3;
-#A 0 0 0 0 0.000603638 0;
-#X coords 0 1 5 0 50 35 1 0 0;
+#X array pattern 10 float 3;
+#A 0 0.07 0.37 0.67 0.07 0.01 0.73 0.69 0.49 0.82 0.18;
+#X coords 0 1 10 0 50 35 1 0 0;
 #X restore 91 203 graph;
 #X obj 428 233 array set pattern;
 #X obj 64 75 f 0;
@@ -29,7 +29,7 @@
 #X obj 428 207 / 100;
 #X obj 428 14 inlet;
 #X obj 428 59 t b f;
-#X obj 531 75 array size pattern;
+#X obj 581 75 array size pattern;
 #X obj 64 143 pipe 20;
 #X obj 91 341 expr pattern[$f1];
 #X obj 199 172 t f b;
@@ -38,6 +38,8 @@
 #X obj 199 236 expr if($f2 > $f3 \, max(0 \, min(1 \, if($f1 < 0.4
 \, $f1 - 0.25 \, if($f1 > 0.6 \, $f1 + 0.25 \, $f1)))) \, $f1), f
 26;
+#X obj 500 14 inlet;
+#X msg 500 94 seed \$1;
 #X connect 2 0 3 0;
 #X connect 2 0 5 0;
 #X connect 3 0 4 0;
@@ -77,4 +79,7 @@
 #X connect 29 0 30 0;
 #X connect 30 0 31 1;
 #X connect 31 0 6 1;
+#X connect 32 0 33 0;
+#X connect 33 0 21 0;
+#X connect 33 0 29 0;
 #X coords 0 -1 1 1 62 60 2 85 185;
