@@ -1,0 +1,268 @@
+#N canvas 0 116 1366 652 10;
+#X obj 152 333 r C1_S;
+#X obj 77 358 list store, f 13;
+#X msg 77 333 get \$1 1;
+#X obj 77 307 f 0;
+#X obj 104 307 + 1;
+#X obj 131 307 % \$1;
+#X obj 152 283 r sillabe;
+#X obj 77 282 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 217 358 list store, f 13;
+#X msg 217 333 get \$1 1;
+#X obj 217 307 f 0;
+#X obj 244 307 + 1;
+#X obj 271 307 % \$1;
+#X obj 292 283 r sillabe;
+#X obj 217 282 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 357 358 list store, f 13;
+#X msg 357 333 get \$1 1;
+#X obj 357 307 f 0;
+#X obj 384 307 + 1;
+#X obj 411 307 % \$1;
+#X obj 432 283 r sillabe;
+#X obj 357 282 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 497 358 list store, f 13;
+#X msg 497 333 get \$1 1;
+#X obj 497 307 f 0;
+#X obj 524 307 + 1;
+#X obj 551 307 % \$1;
+#X obj 572 283 r sillabe;
+#X obj 497 282 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 292 333 r C1_A;
+#X obj 432 333 r C1_T;
+#X obj 572 333 r C1_B;
+#X obj 118 495 list store, f 13;
+#X msg 118 470 get \$1 1;
+#X obj 118 444 f 0;
+#X obj 145 444 + 1;
+#X obj 172 444 % \$1;
+#X obj 193 420 r sillabe;
+#X obj 118 419 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 258 495 list store, f 13;
+#X msg 258 470 get \$1 1;
+#X obj 258 444 f 0;
+#X obj 285 444 + 1;
+#X obj 312 444 % \$1;
+#X obj 333 420 r sillabe;
+#X obj 258 419 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 398 495 list store, f 13;
+#X msg 398 470 get \$1 1;
+#X obj 398 444 f 0;
+#X obj 425 444 + 1;
+#X obj 452 444 % \$1;
+#X obj 473 420 r sillabe;
+#X obj 398 419 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 538 495 list store, f 13;
+#X msg 538 470 get \$1 1;
+#X obj 538 444 f 0;
+#X obj 565 444 + 1;
+#X obj 592 444 % \$1;
+#X obj 613 420 r sillabe;
+#X obj 538 419 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 193 470 r C2_S;
+#X obj 333 470 r C2_A;
+#X obj 473 470 r C2_T;
+#X obj 613 470 r C2_B;
+#X obj 77 225 route 0 1, f 61;
+#X floatatom 162 184 5 0 0 0 - - -;
+#X obj 77 199 i 0;
+#X obj 757 33 inlet;
+#X obj 77 33 inlet;
+#X obj 162 33 inlet;
+#X obj 77 650 outlet;
+#X obj 77 594 change -1;
+#X obj 218 650 outlet;
+#X obj 218 594 change -1;
+#X obj 358 650 outlet;
+#X obj 358 594 change -1;
+#X obj 498 650 outlet;
+#X obj 498 594 change -1;
+#X obj 584 574 f 0;
+#X obj 611 574 + 1;
+#X obj 638 574 % \$1;
+#X obj 659 550 r sillabe;
+#X obj 77 157 t b b, f 85;
+#X obj 584 597 sel 0;
+#X obj 584 650 outlet;
+#X obj 757 109 sel 0 1 2 3 4 5 6 7 8 9 10 11, f 120;
+#X obj 757 83 clip 0 11;
+#X obj 648 596 r Pinax;
+#X obj 648 619 symbol \$1;
+#X msg 757 161 \; Pinax Euripideum \; sillabe 5 \; C1_S 7 6 5 4 3 \;
+C1_A 4 4 3 2 1 \; C1_T 2 1 0 0 6 \; C1_B 0 6 5 4 4 \; C2_S 0 2 3 4
+5 \; C2_A 0 0 1 2 3 \; C2_T 4 4 5 0 1 \; C2_B 0 0 3 0 4 \;;
+#X msg 889 162 \; Pinax Archilochium \; sillabe 6 \; C1_S 7 6 5 4 3
+2 \; C1_A 4 4 3 2 1 0 \; C1_T 2 1 0 0 6 4 \; C1_B 0 6 5 4 4 0 \; C2_S
+0 1 2 3 4 5 \; C2_A 0 6 0 1 2 3 \; C2_T 4 4 4 5 0 1 \; C2_B 0 4 0 3
+0 4 \;;
+#X msg 1035 162 \; Pinax Iambicum \; sillabe 7 \; C1_S 7 6 5 4 3 2
+0 \; C1_A 4 4 3 2 1 0 0 \; C1_T 2 1 0 0 6 4 2 \; C1_B 0 6 5 4 4 0 0
+\; C2_S 0 2 3 4 5 6 7 \; C2_A 0 0 1 2 3 4 4 \; C2_T 4 4 5 0 1 2 2 \;
+C2_B 0 0 3 0 4 0 0 \;;
+#X msg 1181 163 \; Pinax Phalaucium \; sillabe 8 \; C1_S 7 6 5 4 3
+2 1 0 \; C1_A 4 4 3 2 1 0 6 0 \; C1_T 2 1 0 0 6 4 4 2 \; C1_B 0 6 5
+4 4 0 4 0 \; C2_S 0 1 2 3 4 5 6 7 \; C2_A 0 6 0 1 2 3 4 4 \; C2_T 4
+4 4 5 0 1 2 2 \; C2_B 0 4 0 3 0 4 0 0 \;;
+#X msg 1341 163 \; Pinax Sapphicum \; sillabe 9 \; C1_S 7 6 5 4 3 2
+1 0 0 \; C1_A 4 4 3 2 1 0 6 0 0 \; C1_T 2 1 0 0 6 4 4 2 2 \; C1_B 0
+6 5 4 4 0 4 0 0 \; C2_S 0 1 2 3 4 5 6 7 7 \; C2_A 0 6 0 1 2 3 4 4 4
+\; C2_T 4 4 4 5 0 1 2 2 2 \; C2_B 0 4 0 3 0 4 0 0 0 \;;
+#X msg 756 324 \; Pinax Alcaicum \; sillabe 10 \; C1_S 7 6 5 4 3 2
+1 0 6 7 \; C1_A 4 4 3 2 1 0 6 0 1 2 \; C1_T 2 1 0 0 6 4 4 2 3 4 \;
+C1_B 0 6 5 4 4 0 4 0 6 0 \; C2_S 0 1 2 3 4 5 6 7 6 7 \; C2_A 0 6 0
+1 2 3 4 4 3 2 \; C2_T 4 4 4 5 0 1 2 2 1 0 \; C2_B 0 4 0 3 0 4 0 0 4
+0 \;;
+#X msg 935 326 \; Pinax Asclepiadeum \; sillabe 11 \; C1_S 7 6 5 4
+3 2 1 0 6 7 7 \; C1_A 4 4 3 2 1 0 6 0 1 2 2 \; C1_T 2 1 0 0 6 4 4 2
+3 4 4 \; C1_B 0 6 5 4 4 0 4 0 6 0 0 \; C2_S 0 1 2 3 4 5 6 7 6 7 7 \;
+C2_A 0 6 0 1 2 3 4 4 3 2 2 \; C2_T 4 4 4 5 0 1 2 2 1 0 0 \; C2_B 0
+4 0 3 0 4 0 0 4 0 0 \;;
+#X msg 1127 327 \; Pinax Hexametrum \; sillabe 12 \; C1_S 7 6 5 4 3
+2 1 0 6 7 6 7 \; C1_A 4 4 3 2 1 0 6 0 1 2 1 2 \; C1_T 2 1 0 0 6 4 4
+2 3 4 3 4 \; C1_B 0 6 5 4 4 0 4 0 6 0 4 0 \; C2_S 0 1 2 3 4 5 6 7 6
+7 6 7 \; C2_A 0 6 0 1 2 3 4 4 3 2 3 4 \; C2_T 4 4 4 5 0 1 2 2 1 0 1
+2 \; C2_B 0 4 0 3 0 4 0 0 4 0 4 0 \;;
+#X msg 1343 325 \; Pinax Pentametrum \; sillabe 13 \; C1_S 7 6 5 4
+3 2 1 0 6 7 6 7 7 \; C1_A 4 4 3 2 1 0 6 0 1 2 1 2 2 \; C1_T 2 1 0 0
+6 4 4 2 3 4 3 4 4 \; C1_B 0 6 5 4 4 0 4 0 6 0 4 0 0 \; C2_S 0 1 2 3
+4 5 6 7 6 7 6 7 7 \; C2_A 0 6 0 1 2 3 4 4 3 2 3 4 4 \; C2_T 4 4 4 5
+0 1 2 2 1 0 1 2 2 \; C2_B 0 4 0 3 0 4 0 0 4 0 4 0 0 \;;
+#X msg 757 484 \; Pinax Trochaicum \; sillabe 14 \; C1_S 7 6 5 4 3
+2 1 0 6 7 6 7 6 7 \; C1_A 4 4 3 2 1 0 6 0 1 2 1 2 1 2 \; C1_T 2 1 0
+0 6 4 4 2 3 4 3 4 3 4 \; C1_B 0 6 5 4 4 0 4 0 6 0 4 0 4 0 \; C2_S 0
+1 2 3 4 5 6 7 6 7 6 7 6 7 \; C2_A 0 6 0 1 2 3 4 4 3 2 3 4 3 4 \; C2_T
+4 4 4 5 0 1 2 2 1 0 1 2 1 2 \; C2_B 0 4 0 3 0 4 0 0 4 0 4 0 4 0 \;
+;
+#X msg 987 485 \; Pinax Anapesticum \; sillabe 15 \; C1_S 7 6 5 4 3
+2 1 0 6 7 6 7 6 7 7 \; C1_A 4 4 3 2 1 0 6 0 1 2 1 2 1 2 2 \; C1_T 2
+1 0 0 6 4 4 2 3 4 3 4 3 4 4 \; C1_B 0 6 5 4 4 0 4 0 6 0 4 0 4 0 0 \;
+C2_S 0 1 2 3 4 5 6 7 6 7 6 7 6 7 7 \; C2_A 0 6 0 1 2 3 4 4 3 2 3 4
+3 4 4 \; C2_T 4 4 4 5 0 1 2 2 1 0 1 2 1 2 2 \; C2_B 0 4 0 3 0 4 0 0
+4 0 4 0 4 0 0 \;;
+#X msg 1226 486 \; Pinax Galliambicum \; sillabe 16 \; C1_S 7 6 5 4
+3 2 1 0 6 7 6 7 6 7 6 7 \; C1_A 4 4 3 2 1 0 6 0 1 2 1 2 1 2 1 2 \;
+C1_T 2 1 0 0 6 4 4 2 3 4 3 4 3 4 3 4 \; C1_B 0 6 5 4 4 0 4 0 6 0 4
+0 4 0 4 0 \; C2_S 0 1 2 3 4 5 6 7 6 7 6 7 6 7 6 7 \; C2_A 0 6 0 1 2
+3 4 4 3 2 3 4 3 4 3 4 \; C2_T 4 4 4 5 0 1 2 2 1 0 1 2 1 2 1 2 \; C2_B
+0 4 0 3 0 4 0 0 4 0 4 0 4 0 4 0 \;;
+#X obj 648 650 outlet;
+#X connect 0 0 1 1;
+#X connect 1 0 71 0;
+#X connect 2 0 1 0;
+#X connect 3 0 4 0;
+#X connect 3 0 2 0;
+#X connect 4 0 5 0;
+#X connect 5 0 3 1;
+#X connect 6 0 5 1;
+#X connect 7 0 3 0;
+#X connect 8 0 73 0;
+#X connect 9 0 8 0;
+#X connect 10 0 11 0;
+#X connect 10 0 9 0;
+#X connect 11 0 12 0;
+#X connect 12 0 10 1;
+#X connect 13 0 12 1;
+#X connect 14 0 10 0;
+#X connect 15 0 75 0;
+#X connect 16 0 15 0;
+#X connect 17 0 18 0;
+#X connect 17 0 16 0;
+#X connect 18 0 19 0;
+#X connect 19 0 17 1;
+#X connect 20 0 19 1;
+#X connect 21 0 17 0;
+#X connect 22 0 77 0;
+#X connect 23 0 22 0;
+#X connect 24 0 25 0;
+#X connect 24 0 23 0;
+#X connect 25 0 26 0;
+#X connect 26 0 24 1;
+#X connect 27 0 26 1;
+#X connect 28 0 24 0;
+#X connect 29 0 8 1;
+#X connect 30 0 15 1;
+#X connect 31 0 22 1;
+#X connect 32 0 71 0;
+#X connect 33 0 32 0;
+#X connect 34 0 35 0;
+#X connect 34 0 33 0;
+#X connect 35 0 36 0;
+#X connect 36 0 34 1;
+#X connect 37 0 36 1;
+#X connect 38 0 34 0;
+#X connect 39 0 73 0;
+#X connect 40 0 39 0;
+#X connect 41 0 42 0;
+#X connect 41 0 40 0;
+#X connect 42 0 43 0;
+#X connect 43 0 41 1;
+#X connect 44 0 43 1;
+#X connect 45 0 41 0;
+#X connect 46 0 75 0;
+#X connect 47 0 46 0;
+#X connect 48 0 49 0;
+#X connect 48 0 47 0;
+#X connect 49 0 50 0;
+#X connect 50 0 48 1;
+#X connect 51 0 50 1;
+#X connect 52 0 48 0;
+#X connect 53 0 77 0;
+#X connect 54 0 53 0;
+#X connect 55 0 56 0;
+#X connect 55 0 54 0;
+#X connect 56 0 57 0;
+#X connect 57 0 55 1;
+#X connect 58 0 57 1;
+#X connect 59 0 55 0;
+#X connect 60 0 32 1;
+#X connect 61 0 39 1;
+#X connect 62 0 46 1;
+#X connect 63 0 53 1;
+#X connect 64 0 7 0;
+#X connect 64 0 14 0;
+#X connect 64 0 21 0;
+#X connect 64 0 28 0;
+#X connect 64 1 38 0;
+#X connect 64 1 59 0;
+#X connect 64 1 52 0;
+#X connect 64 1 45 0;
+#X connect 65 0 66 1;
+#X connect 66 0 64 0;
+#X connect 67 0 86 0;
+#X connect 68 0 82 0;
+#X connect 69 0 65 0;
+#X connect 71 0 70 0;
+#X connect 73 0 72 0;
+#X connect 75 0 74 0;
+#X connect 77 0 76 0;
+#X connect 78 0 79 0;
+#X connect 78 0 83 0;
+#X connect 79 0 80 0;
+#X connect 80 0 78 1;
+#X connect 81 0 80 1;
+#X connect 82 0 66 0;
+#X connect 82 1 78 0;
+#X connect 83 0 84 0;
+#X connect 85 0 89 0;
+#X connect 85 1 90 0;
+#X connect 85 2 91 0;
+#X connect 85 3 92 0;
+#X connect 85 4 93 0;
+#X connect 85 5 94 0;
+#X connect 85 6 95 0;
+#X connect 85 7 96 0;
+#X connect 85 8 97 0;
+#X connect 85 9 98 0;
+#X connect 85 10 99 0;
+#X connect 85 11 100 0;
+#X connect 86 0 85 0;
+#X connect 87 0 88 0;
+#X connect 88 0 101 0;
